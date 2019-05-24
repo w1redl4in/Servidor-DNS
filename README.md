@@ -49,6 +49,8 @@
  # teste
     ping www.exemplo.local
     
- 
- # Pra cada hostvirtual (página apache) é necessário a criação de uma nova zona!!
+ # Implementação no DHCP
+## Adicionar a linha dentro do escopo de configuração do DHCP
+	option domain-name-servers 192.168.100.11, 8.8.8.8;
+					
     
