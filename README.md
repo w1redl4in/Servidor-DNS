@@ -50,7 +50,7 @@
     ping www.exemplo.local
     
  # Implementação no DHCP
-## Adicionar a linha dentro do escopo de configuração do DHCP
+##  Insira esta linha dentro do escopo de configuração do DHCP
 	option domain-name-servers 192.168.100.11, 8.8.8.8;
 					
     
