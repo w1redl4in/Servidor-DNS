@@ -45,7 +45,7 @@
       }
       
  # resolv.conf
- ### Precisamos fazer o servidor ser seu próprio cliente, então adicionamos o próprio IP dele no resolv.conf.
+ ### Precisamos fazer o servidor ser seu próprio cliente, então adicionamos o próprio IP no resolv.conf.
     nameserver seuip
     
  # hosts
