@@ -21,8 +21,8 @@
     
     
     
-    $TTL	604800
-	  @	IN	SOA	nomedamaquina.exemplo.local	root.exemplo.local. (
+    	$TTL	604800
+	@	IN	SOA	nomedamaquina.exemplo.local.	root.exemplo.local. (
 						2		;Serial
 						604800		; Refresh
 						86400		; Retry
