@@ -49,4 +49,6 @@
  # teste
     ping www.exemplo.local
     
+ 
+ # Pra cada hostvirtual (página apache) é necessário a criação de uma nova zona!!
     
