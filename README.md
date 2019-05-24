@@ -1,8 +1,10 @@
 # Instalação 
     sudo su
+    apt update
     apt install bind9 -y
     
 # Configuração 
+### É mais prático copiar um arquivo para outro do que criar um do zero.
     cd /etc/bind
     cp named.local.default-zones named.conf.local
     
@@ -14,10 +16,11 @@
      };
      
 # Criando db.teste.local
+### É mais prático copiar um arquivo para outro do que criar um do zero.
     cp db.local db.teste.local
     
   ## Editando db.teste.local
-  ### Os pontos finais são muito importantes, não esqueça nenhum
+  ### Os pontos finais são muito importantes, não esqueça nenhum!
     vim db.teste.local
     
     
@@ -36,22 +39,24 @@
 	www		IN	CNAME	exemplo.local.
     
  # named.conf.options
-    Apenas retirar os comentários das linhas:
+ ### Apenas retirar os comentários das linhas:
       forwarders{
           8.8.8.8;
       }
       
  # resolv.conf
+ ### Precisamos fazer o servidor ser seu próprio cliente, então adicionamos o próprio IP dele no resolv.conf.
     nameserver seuip
     
  # hosts
+ 
     seuip           nomedasuamaquina@exemplo.local          nomedamaquina
     
  # teste
     ping www.exemplo.local
     
  # Implementação no DHCP
-##  Insira esta linha dentro do escopo de configuração do DHCP
+##  Insira esta linha dentro do escopo de configuração do DHCP.
 	option domain-name-servers 192.168.100.11, 8.8.8.8;
 					
     
