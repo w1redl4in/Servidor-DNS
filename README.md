@@ -17,6 +17,7 @@
     cp db.local db.teste.local
     
   ## Editando db.teste.local
+  ### Os pontos finais são muito importantes, não esqueça nenhum
     vim db.teste.local
     
     
