@@ -4,7 +4,7 @@
     apt install bind9 -y
     
 # Configuração 
-### É mais prático copiar um arquivo para outro do que criar um do zero.
+### É mais prático fazer uma cópia do arquivo do que criar um do zero.
     cd /etc/bind
     cp named.local.default-zones named.conf.local
     
@@ -15,8 +15,8 @@
         file "/etc/bind/db.teste.local";
      };
      
-# Criando db.teste.local
-### É mais prático copiar um arquivo para outro do que criar um do zero.
+# Criando db.exemplo.local
+### É mais prático fazer uma cópia do arquivo do que criar um do zero.
     cp db.local db.teste.local
     
   ## Editando db.teste.local
